@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '02-bases';
+  public title: string = 'Hola Mundo con Angular y Jhonattan';
+  public contador: number = 10;
+  increaseBy(value: number): void{
+    this.contador += value;
+  }
+  reset():void {
+    this.contador = 0;
+  }
 }
